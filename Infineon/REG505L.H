@@ -1,13 +1,5 @@
-/*--------------------------------------------------------------------------
-REG505L.H
-
-Header file for the C505L Processor.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG505L_H__
-#define __REG505L_H__
+/* (c) Copyright KEIL ELEKTRONIK GmbH. 1997 , All rights reserved.*/
+/*  Register Declarations for the C505L Processor */
 
 /*  BYTE Register  */
 sfr   P0     = 0x80; /* Bit-addressable SFR */
@@ -171,5 +163,3 @@ sbit  EAN3   = 0x93;
 sbit  EAN2   = 0x92;
 sbit  EAN1   = 0x91;
 sbit  EAN0   = 0x90;
-
-#endif

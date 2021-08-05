@@ -2,12 +2,9 @@
 REG515.H
 
 Header file for 80515.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG515_H__
-#define __REG515_H__
 
 /*  BYTE Register  */
 sfr P0     = 0x80;
@@ -142,5 +139,3 @@ sbit IEX4   = 0xC3;
 sbit IEX3   = 0xC2;
 sbit IEX2   = 0xC1;
 sbit IADC   = 0xC0;
-
-#endif

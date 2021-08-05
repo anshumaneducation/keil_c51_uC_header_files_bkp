@@ -2,12 +2,9 @@
 REG552.H
 
 Header file for 80552.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG552_H__
-#define __REG552_H__
 
 /*  BYTE Register  */
 sfr P0    = 0x80;
@@ -189,5 +186,3 @@ sbit SI    = 0xDB;
 sbit STO   = 0xDC;
 sbit STA   = 0xDD;
 sbit ENS1  = 0xDE;
-
-#endif

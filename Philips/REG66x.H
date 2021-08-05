@@ -3,23 +3,20 @@ REG66x.H
 
 Header file for Philips 8xC660/662/664
   
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG66x_H__
-#define __REG66x_H__
+-------------------------------------------------------------------------*/
 
 sfr  P0      =   0x80;			 
 
-sbit  AD7    =   P0^7;
-sbit  AD6    =   P0^6;
-sbit  AD5    =   P0^5;
-sbit  AD4    =   P0^4;
-sbit  AD3    =   P0^3;
-sbit  AD2    =   P0^2;
-sbit  AD1    =   P0^1;
-sbit  AD0    =   P0^0;
+sbit  P0_7    =   P0^7;
+sbit  P0_6    =   P0^6;
+sbit  P0_5    =   P0^5;
+sbit  P0_4    =   P0^4;
+sbit  P0_3    =   P0^3;
+sbit  P0_2    =   P0^2;
+sbit  P0_1    =   P0^1;
+sbit  P0_0    =   P0^0;
 
 sfr  SP      =   0x81;
 sfr  DPL     =   0x82;
@@ -50,17 +47,22 @@ sfr  TH1     =   0x8D;
 
 sfr  P1      =   0x90;			 
 
-sbit  SDA     =   P1^7;
-sbit  SCL     =   P1^6;
-sbit  CEX2    =   P1^5;
-sbit  CEX1    =   P1^4;
-sbit  CEX0    =   P1^3;
-sbit  ECI     =   P1^2;
+sbit  P1_7    =   P1^7;
+sbit  P1_6    =   P1^6;
+sbit  P1_5    =   P1^5;
+sbit  P1_4    =   P1^4;
+sbit  P1_3    =   P1^3;
+sbit  P1_2    =   P1^2;
+sbit  P1_1    =   P1^1;
+sbit  P1_0    =   P1^0;
+
 sbit  T2EX    =   P1^1;
 sbit  T2      =   P1^0;
 
 sfr  S0CON    =   0x98;			 
-sfr  S1CON    =	  0xD8;
+sfr  S1CON	  =	  0xD8;
+
+sfr  SCON	 =	  0x98;
 
 sbit  SM0    =   S0CON^7;
 sbit  FE     =   S0CON^7;
@@ -72,47 +74,42 @@ sbit  RB8    =   S0CON^2;
 sbit  TI     =   S0CON^1;
 sbit  RI     =   S0CON^0;
 
-sbit  CR2    =   S1CON^7;
-sbit  ENS1   =   S1CON^6;
-sbit  STA    =   S1CON^5;
-sbit  STO    =   S1CON^4;
-sbit  SI     =   S1CON^3;
-sbit  AA     =   S1CON^2;
-sbit  CR1    =   S1CON^1;
-sbit  CR0    =   S1CON^0;
-
 sfr  S0BUF    =   0x99;			 
 
 sfr  P2      =   0xA0;			 
 
-sbit  AD15    =   P2^7;
-sbit  AD14    =   P2^6;
-sbit  AD13    =   P2^5;
-sbit  AD12    =   P2^4;
-sbit  AD11    =   P2^3;
-sbit  AD10    =   P2^2;
-sbit  AD9     =   P2^1;
-sbit  AD8     =   P2^0;
+sbit  P2_7    =   P2^7;
+sbit  P2_6    =   P2^6;
+sbit  P2_5    =   P2^5;
+sbit  P2_4    =   P2^4;
+sbit  P2_3    =   P2^3;
+sbit  P2_2    =   P2^2;
+sbit  P2_1    =   P2^1;
+sbit  P2_0    =   P2^0;
 
-sfr  IEN0    =   0xA8;
+sfr  IE     =   0xA8;			     
+sfr  IE0    =   0xA8;
 
-sbit  EA     =   IEN0^7;
-sbit  EC     =   IEN0^6;
-sbit  ES1    =   IEN0^5;
-sbit  ES0    =   IEN0^4;
-sbit  ET1    =   IEN0^3;
-sbit  EX1    =   IEN0^2;
-sbit  ET0    =   IEN0^1;
-sbit  EX0    =   IEN0^0;
-
-sfr IEN1	= 0xE8;
-
-sbit  ET2    =   IEN1^0;
-
+sbit  EA     =   IE^7;
+sbit  ET2    =   IE^5;
+sbit  ES     =   IE^4;
+sbit  ET1    =   IE^3;
+sbit  EX1    =   IE^2;
+sbit  ET0    =   IE^1;
+sbit  EX0    =   IE^0;
 
 sfr  SADDR   =   0xA9;			 
 
 sfr  P3      =   0xB0;			 
+
+sbit  P3_7    =   P3^7;
+sbit  P3_6    =   P3^6;
+sbit  P3_5    =   P3^5;
+sbit  P3_4    =   P3^4;
+sbit  P3_3    =   P3^3;
+sbit  P3_2    =   P3^2;
+sbit  P3_1    =   P3^1;
+sbit  P3_0    =   P3^0;
 
 sbit  RD      =   P3^7;
 sbit  WR      =   P3^6;
@@ -123,21 +120,19 @@ sbit  INT0    =   P3^2;
 sbit  TXD     =   P3^1;
 sbit  RXD     =   P3^0;
 
-sfr  IPH      =   0xB7;			     
-sfr  IP       =   0xB8;
+sfr  IPH    =   0xB7;			     
+sfr  IP     =   0xB8;
 
 
 sfr  SADEN   =   0xB9;			 
 	
 
-sbit  PT2      =   IP^7;
-sbit  PPC      =   IP^6;
-sbit  PS1      =   IP^5;
-sbit  PS0      =   IP^4;
-sbit  PT1      =   IP^3;
-sbit  PX1      =   IP^2;
-sbit  PT0      =   IP^2;
-sbit  PX0      =   IP^2;
+sbit  IPLT2    =   IP^5;
+sbit  IPLS     =   IP^4;
+sbit  IPLT1    =   IP^3;
+sbit  IPLX1    =   IP^2;
+sbit  IPLT0    =   IP^1;
+sbit  IPLX0    =   IP^0;
 
 sfr  T2CON   =   0xC8;             
 
@@ -148,7 +143,7 @@ sbit  TCLK   =   T2CON^4;
 sbit  EXEN2  =   T2CON^3;
 sbit  TR2    =   T2CON^2;
 sbit  CT2    =   T2CON^1;
-sbit  CP     =   T2CON^0;
+sbit  CPRL2  =   T2CON^0;
 
 sfr  T2MOD   =   0xC9;			 
 
@@ -171,14 +166,7 @@ sbit  P      =   PSW^0;
 sfr  ACC     =   0xE0;			 
 sfr  B       =   0xF0;			 
 
-sfr  CCON    =   0xC0;	
-sbit  CF     =   CCON^7;
-sbit  CR     =   CCON^6;
-sbit  CCF4   =   CCON^4;
-sbit  CCF3   =   CCON^3;
-sbit  CCF2   =   CCON^2;
-sbit  CCF1   =   CCON^1;
-sbit  CCF0   =   CCON^0;		 
+sfr  CCON    =   0xC0;			 
 
 sfr  CMOD    =   0xC1;			 
 sfr  CCAPM0  =   0xC2;			 
@@ -200,16 +188,15 @@ sfr  CCAP1H  =   0xFB;
 sfr  CCAP2H  =   0xFC;			 
 sfr  CCAP3H  =   0xFD;			 
 sfr  CCAP4H  =   0xFE;	
-
-
+sfr IEN0  	= 0xA8;
+sfr IEN1	= 0xE8;
 
 sfr AUXR	= 0x8E;
 sfr AUXR1	= 0xA2;
 
-sfr     S1DAT	=       0xDA;
+sfr S1DAT	= 0xDA;
 sfr	S1IST	=	0xDC;
 sfr	S1ADR	=	0xDB;
 sfr	S1STA	=	0xD9;
 
-sfr     WDTRST =       0xA6;
-#endif
+

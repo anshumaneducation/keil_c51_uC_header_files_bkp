@@ -1,13 +1,5 @@
-/*--------------------------------------------------------------------------
-C5X5CEXT.H
-
-Header file for Extended CAN Register Definitions for the C505C and C515C CAN Processors.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __C5X5CEXT_H__
-#define __C5X5CEXT_H__
+/* (c) Copyright KEIL ELEKTRONIK GmbH. 1997 , All rights reserved. */
+/* Extended CAN Register Definitions for the C505C and C515C CAN Processors  */
 
 #define CR (*((unsigned char volatile xdata*)0xF700))
 #define SR (*((unsigned char volatile xdata*)0xF701))
@@ -44,6 +36,4 @@ All rights reserved.
 #define DB7 (*((unsigned char volatile xdata*)0xF7n0))
 /* The notation "n" (n = 1 to F) in the message object address 
    definition defines the number of the related message object. */
-#endif
-
 #endif

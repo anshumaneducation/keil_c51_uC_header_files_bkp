@@ -6,9 +6,6 @@ Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __REG390_H__
-#define __REG390_H__
-
 /*  BYTE Registers  */
 sfr P4     = 0x80;
 sfr P1     = 0x90;
@@ -53,7 +50,7 @@ sfr P5CNT  = 0xA2;
 sfr C0C    = 0xA3;
 sfr C0S    = 0xA4;
 sfr C0IR   = 0xA5;
-sfr C0TE   = 0xA6;
+sfr C0TE   = 0xA5;
 sfr C0RE   = 0xA7;
 sfr SADDR0 = 0xA9;
 sfr SADDR1 = 0xAA;
@@ -92,11 +89,11 @@ sfr MCNT1  = 0xD2;
 sfr MA     = 0xD3;
 sfr MB     = 0xD4;
 sfr MC     = 0xD5;
-sfr C1RMS0 = 0xD6;
-sfr C1RMS1 = 0xD7;
+sfr CIRMS0 = 0xD6;
+sfr CIRMS1 = 0xD7;
 sfr WDCON  = 0xD8;
-sfr C1TMA0 = 0xDE;
-sfr C1TMA1 = 0xDF;
+sfr CITMA0 = 0xDE;
+sfr CITMA1 = 0xDF;
 sfr C1C    = 0xE3;
 sfr C1S    = 0xE4;
 sfr C1IR   = 0xE5;
@@ -242,10 +239,9 @@ sbit EX2   = EIE^0; /* Alternate EC0 */
 sbit CANBIP= EIP^7;
 sbit C0IP  = EIP^6;
 sbit C1IP  = EIP^5;
-sbit PWDI  = EIP^4;
+sbit PWD1  = EIP^4;
 sbit PX5   = EIP^3; /* Alternate PC3 */
 sbit PX4   = EIP^2; /* Alternate PC2 */
 sbit PX3   = EIP^1; /* Alternate PC1 */
 sbit PX2   = EIP^0; /* Alternate PC0 */
-
-#endif
+

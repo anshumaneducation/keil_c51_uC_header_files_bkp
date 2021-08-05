@@ -2,12 +2,12 @@
 LIMITS.H
 
 ANSI standard include file.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __LIMITS_H__
-#define __LIMITS_H__
+#ifndef _LIMITS_INCLUDED
+#define _LIMITS_INCLUDED
 
 #define CHAR_BIT         8              /* Number of bits in any "char" */
 #define CHAR_MAX         127            /* Max             "char" value */

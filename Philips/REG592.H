@@ -2,12 +2,9 @@
 REG592.H
 
 Header file for 80592.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG592_H__
-#define __REG592_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -192,5 +189,3 @@ sbit RAMA3 = 0xDB;
 sbit RAMA2 = 0xDA;
 sbit RAMA1 = 0xD9;
 sbit RAMA0 = 0xD8;
-
-#endif

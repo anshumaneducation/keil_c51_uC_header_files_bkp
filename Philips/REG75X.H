@@ -2,7 +2,7 @@
 REG75x.H
 
 Header file for the Philips 8xC750/751/752 
-Copyright (c) 1995-2002 Keil Elektronik GmbH  All rights reserved.
+Copyright (c) 1995-1999 Keil Elektronik GmbH  All rights reserved.
 
 Definition of CPU Type in the main program:
 

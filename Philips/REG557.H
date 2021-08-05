@@ -2,12 +2,9 @@
 REG557.H
 
 Header file for 80557.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG557_H__
-#define __REG557_H__
 
 /*  BYTE Register  */
 sfr P0    = 0x80;
@@ -80,9 +77,13 @@ sfr ADRSL5 = 0xC6;
 sfr ADRSL6 = 0xD6;
 sfr ADRSL7 = 0xE6;
 
+sfr S1STA	= 0xD9;
+sfr S1DAT	= 0xDA;
+sfr S1ADR	= 0xDB;
 sfr ADPSS	= 0xE7;
 sfr ADRSH	= 0xF7;
 sfr PLLCON	= 0xF9;
+sfr TM2CON	= 0xEA;
 sfr XRAMP	= 0xFA;
 sfr FMCON	= 0xFB;
 
@@ -203,5 +204,3 @@ sbit SI    = 0xDB;
 sbit STO   = 0xDC;
 sbit STA   = 0xDD;
 sbit ENS1  = 0xDE;
-
-#endif

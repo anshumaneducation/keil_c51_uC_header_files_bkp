@@ -1,13 +1,9 @@
 /*--------------------------------------------------------------------------
 ASSERT.H
 
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __ASSERT_H__
-#define __ASSERT_H__
-
 #undef assert
 
 #ifndef	__ASSERT_INC
@@ -27,4 +23,3 @@ All rights reserved.
 #define	assert(expr)
 #endif
 
-#endif

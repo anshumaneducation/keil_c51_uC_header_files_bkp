@@ -2,12 +2,12 @@
 REG151S.H
 
 8xC151SX Processor Declarations.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __REG151S_H__
-#define __REG151S_H__
+#ifndef REG151S_HEADER_FILE
+#define REG151S_HEADER_FILE 1
 
 /*  BYTE Registers  */
 sfr P0   = 0x80;

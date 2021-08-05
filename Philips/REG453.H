@@ -1,13 +1,5 @@
-/*--------------------------------------------------------------------------
-REG453.H
-
-Header file for the 80C453 Processor.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG453_H__
-#define __REG453_H__
+/* (c) Copyright KEIL ELEKTRONIK GmbH. 1997, All rights reserved. */
+/* 80C453 Processor Declarations */
 
 /*  BYTE Registers  */
 sfr P0   = 0x80;
@@ -107,5 +99,3 @@ sbit OBFC = 0xEB;
 sbit IDSM = 0xEA;
 sbit OBF  = 0xE9;
 sbit IBF  = 0xE8;
-
-#endif

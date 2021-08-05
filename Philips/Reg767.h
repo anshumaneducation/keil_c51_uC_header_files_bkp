@@ -2,12 +2,9 @@
 REG767.H
 
 Header file for Philips 87LPC767
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG767_H__
-#define __REG767_H__
 
 /* standard 8051 BYTE Registers  */
 sfr P0    = 0x80;
@@ -183,5 +180,3 @@ sbit ADCS   = ADCON^3;
 sbit RCCLK  = ADCON^2;
 sbit AADR1  = ADCON^1;
 sbit AADR0  = ADCON^0;
-
-#endif

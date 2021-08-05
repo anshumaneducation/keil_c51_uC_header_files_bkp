@@ -2,12 +2,9 @@
 REG508.H
 
 Header file for Infineon C508
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG508_H__
-#define __REG508_H__
+------------------------------------------------------------------------*/
 
 /*  BYTE Register  */
 sfr   P0     = 0x80;
@@ -229,5 +226,3 @@ sbit  P5_3     = P5^3;
 sbit  P5_2     = P5^2;
 sbit  P5_1     = P5^1;
 sbit  P5_0     = P5^0;
-
-#endif

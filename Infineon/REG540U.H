@@ -2,12 +2,9 @@
 REG540U.H 
 
 Header file for Infineon C540U USB controller 
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG540U_H__
-#define __REG540U_H__
+------------------------------------------------------------------*/
 
 /*  BYTE Register  */
 sfr   P0     = 0x80; 
@@ -153,5 +150,3 @@ sbit  RS0   = 0xD3;
 sbit  OV    = 0xD2;
 sbit  F1    = 0xD1;
 sbit  P     = 0xD0;
-
-#endif

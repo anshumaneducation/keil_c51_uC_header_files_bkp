@@ -2,12 +2,9 @@
 REG154S.H
 
 Header file for OKI MSM80C154S/83C154S
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG154S_H__
-#define __REG154S_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -122,6 +119,4 @@ sbit RXD   = P3^0;
 /*  P1  */
 sbit T2EX  = P1^1;
 sbit T2    = P1^0;
-
-#endif
              

@@ -1,14 +1,5 @@
-/*--------------------------------------------------------------------------
-REG504.H
-
-Header file for the C504 Processor.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG504_H__
-#define __REG504_H__
-
+/* (c) Copyright KEIL ELEKTRONIK GmbH. 1997 , All rights reserved. */
+/*  Register Declarations for the C504 Processor, Author: RB       */
 
 /*  BYTE Register  */
 sfr   P0     = 0x80; /* Bit-addressable SFR */
@@ -34,6 +25,7 @@ sfr   ITCON  = 0x9A;
 sfr   P2     = 0xA0; /* Bit-addressable SFR */
 sfr   IEN0   = 0xA8; /* Bit-addressable SFR */
 sfr   IEN1   = 0xA9;
+sfr   SRELL  = 0xAA;
 
 sfr   P3     = 0xB0; /* Bit-addressable SFR */
 sfr   P3ANA  = 0xB0; /* Bit-addressable SFR, in mapped SFR area */
@@ -60,7 +52,7 @@ sfr   TRCON  = 0xCF;
 sfr   PSW    = 0xD0; /* Bit-addressable SFR */
 sfr   CP2L   = 0xD2;
 sfr   CP2H   = 0xD3;
-sfr   CMP2L  = 0xD4;
+sfr   CMP2l  = 0xD4;
 sfr   CMP2H  = 0xD5;
 sfr   CCIE   = 0xD6;
 sfr   BCON   = 0xD7;
@@ -177,5 +169,4 @@ sbit  OV    = 0xD2;
 sbit  F1    = 0xD1;
 sbit  P     = 0xD0;
 
-#endif
-
+

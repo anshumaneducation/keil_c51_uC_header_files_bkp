@@ -2,12 +2,9 @@
 REG7C646.H
 
 Header file for the Cypress CY7C646XX microcontroller family.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG7C646_H__
-#define __REG7C646_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -110,5 +107,3 @@ sbit EXEN2  = T2CON^3;
 sbit TR2    = T2CON^2;
 sbit C_T2   = T2CON^1;
 sbit CP_RL2 = T2CON^0;
-
-#endif

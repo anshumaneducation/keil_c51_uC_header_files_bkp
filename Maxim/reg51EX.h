@@ -1,14 +1,3 @@
-/*--------------------------------------------------------------------------
-REG51EX.H
-
-Header file for generic 80C51 and 80C31 microcontroller.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG51EX_H__
-#define __REG51EX_H__
-
 sfr	P0	=	0x80;
 sfr	SP	=	0x81;
 sfr	DPL0	=	0x82;
@@ -75,6 +64,4 @@ sfr	EESTCMD	=	0xED;
 sfr	B	=	0xF0;
 
 sfr	EIP	=	0xF8;
-sfr	PWMC	=	0xFE;
-
-#endif	
+sfr	PWMC	=	0xFE;	

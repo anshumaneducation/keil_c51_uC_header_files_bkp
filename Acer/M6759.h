@@ -2,12 +2,9 @@
 M6759.H
 
 Header file for Acer Labs M6759
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __M6759_H__
-#define __M6759_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -116,5 +113,3 @@ sbit EXEN2  = T2CON^3;
 sbit TR2    = T2CON^2;
 sbit C_T2   = T2CON^1;
 sbit CP_RL2 = T2CON^0;
-
-#endif

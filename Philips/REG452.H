@@ -2,12 +2,9 @@
 REG452.H
 
 Header file for 80C452.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG452_H__
-#define __REG452_H__
 
 /*  BYTE Registers  */
 sfr P0   = 0x80;
@@ -145,5 +142,3 @@ sbit EDMA1 = 0xFB;
 sbit PDMA0 = 0xFA;
 sbit PDMA1 = 0xF9;
 sbit EFIFO = 0xF8;
-
-#endif

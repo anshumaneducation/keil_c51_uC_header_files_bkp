@@ -2,12 +2,9 @@
 REG764.H
 
 Header file for Philips 87LPC764
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG764_H__
-#define __REG764_H__
 
 /* standard 8051 BYTE Registers  */
 sfr P0    = 0x80;
@@ -171,5 +168,3 @@ sbit PC1    = IP1^5;
 sbit PC2    = IP1^2;
 sbit PKB    = IP1^1;
 sbit PI2    = IP1^0;
-
-#endif

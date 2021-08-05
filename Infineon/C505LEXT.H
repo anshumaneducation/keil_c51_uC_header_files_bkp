@@ -1,13 +1,5 @@
-/*--------------------------------------------------------------------------
-C505LEXT.H
-
-Header file for extended LCD and RTC Register Definitions for the C505L Processor
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __C505LEXT_H__
-#define __C505LEXT_H__
+/* (c) Copyright KEIL ELEKTRONIK GmbH. 1997 , All rights reserved.   */
+/* Extended LCD and RTC Register Definitions for the C505L Processor */
 
 /* LCD Controller */
 #define LCON (*((unsigned char volatile xdata*)0xF3DD))
@@ -47,6 +39,4 @@ All rights reserved.
 #define RTINT2 (*((unsigned char volatile xdata*)0xF3FD))
 #define RTINT3 (*((unsigned char volatile xdata*)0xF3FE))
 #define RTINT4 (*((unsigned char volatile xdata*)0xF3FF))
-
-#endif
 

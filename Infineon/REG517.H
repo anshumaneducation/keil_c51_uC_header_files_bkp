@@ -2,12 +2,9 @@
 REG517.H
 
 Header file for 80C517.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG517_H__
-#define __REG517_H__
 
 /*  BYTE Register  */
 sfr   P0     = 0x80;
@@ -202,5 +199,3 @@ sbit  IEX4   = 0xC3;
 sbit  IEX3   = 0xC2;
 sbit  IEX2   = 0xC1;
 sbit  IADC   = 0xC0;
-
-#endif

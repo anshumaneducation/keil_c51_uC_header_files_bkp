@@ -2,12 +2,9 @@
 REG550.H
 
 Header file for Dallas DS87C550.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG550_H__
-#define __REG550_H__
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -224,5 +221,4 @@ sbit PX5   = EIP^3; /* Alternate PC3 */
 sbit PX4   = EIP^2; /* Alternate PC2 */
 sbit PX3   = EIP^1; /* Alternate PC1 */
 sbit PX2   = EIP^0; /* Alternate PC0 */
-
-#endif
+

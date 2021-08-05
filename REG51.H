@@ -2,12 +2,9 @@
 REG51.H
 
 Header file for generic 80C51 and 80C31 microcontroller.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG51_H__
-#define __REG51_H__
 
 /*  BYTE Register  */
 sfr P0   = 0x80;
@@ -87,5 +84,3 @@ sbit TB8  = 0x9B;
 sbit RB8  = 0x9A;
 sbit TI   = 0x99;
 sbit RI   = 0x98;
-
-#endif

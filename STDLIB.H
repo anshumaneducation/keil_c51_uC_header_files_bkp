@@ -2,12 +2,9 @@
 STDLIB.H
 
 Standard functions.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __STDLIB_H__
-#define __STDLIB_H__
 
 #ifndef _SIZE_T
  #define _SIZE_T
@@ -49,5 +46,3 @@ extern void _MALLOC_MEM_ *realloc (void _MALLOC_MEM_ *p, unsigned int size);
 extern void _MALLOC_MEM_ *calloc  (unsigned int size, unsigned int len);
 
 #pragma RESTORE
-
-#endif

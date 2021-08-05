@@ -2,12 +2,8 @@
 REG515C.H
 
 Header file for the Infineon C515C 
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG515C_H__
-#define __REG515C_H__
+Copyright (c) 1995-1999 Keil Elektronik GmbH  All rights reserved.
+------------------------------------------------------------------*/
 
 /*  BYTE Registers    */
 /*  CPU    */
@@ -202,5 +198,3 @@ sbit  STO    = P4^3;
 sbit  SRI    = P4^2;
 sbit  SCLK   = P4^1;
 sbit  ADST   = P4^0;
-
-#endif

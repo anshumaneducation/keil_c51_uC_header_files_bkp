@@ -2,12 +2,12 @@
 REG931.H
 
 Header file for 8xC931Hx
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __REG931_H__
-#define __REG931_H__
+#ifndef REG931_HEADER_FILE
+#define REG931_HEADER_FILE 1
 
 /*------------------------------------------------
 Byte Registers
@@ -508,7 +508,8 @@ sbit FTXD0   =     FIFLG^0;
 /* 931Hx SFR Bits */
 sbit HTXD0   =     HIFLG^0;
 sbit HRXD0   =     HIFLG^1;
-
+/*------------------------------------------------
+------------------------------------------------*/
 #endif
 
 

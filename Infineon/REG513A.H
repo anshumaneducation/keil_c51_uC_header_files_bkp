@@ -2,12 +2,9 @@
 REG513A.H
 
 Header file for Infineon C513A
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG513A_H__
-#define __REG513A_H__
+------------------------------------------------------------------------*/
 
 /* BYTE Registers */
 sfr   P0     = 0x80;
@@ -158,8 +155,4 @@ sbit   BRS1  = SSCCON^1;
 sbit   BRS0  = SSCCON^0;
 /* SCF   */
 sbit   WCOL  = SCF^1;
-sbit   TC    = SCF^0;
-
-#endif
-
-
+sbit   TC    = SCF^0; 

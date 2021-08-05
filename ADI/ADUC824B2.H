@@ -35,6 +35,7 @@ sfr RCAP2L = 0xCA;
 sfr RCAP2H = 0xCB;
 sfr TL2    = 0xCC;
 sfr TH2    = 0xCD;
+
 /*  ADuC824 extensions  */
 sfr DPP      = 0x84;
 sfr I2CDAT   = 0x9A;
@@ -75,7 +76,6 @@ sfr OF0H     = 0xE3;
 sfr OF1L     = 0xE4;
 sfr OF1H     = 0xE5;
 sfr I2CCON   = 0xE8;
-sfr DCON     = 0xE8;
 sfr GN0L     = 0xE9;
 sfr GN0M     = 0xEA;
 sfr GN0H     = 0xEB;
@@ -92,6 +92,8 @@ sfr	PWWL	 = 0xB1;
 sfr	PWWH	 = 0xB2;
 sfr PWCH	 = 0xB4;
 sfr PWCL	 = 0xB3;
+sfr CHIPID	 = 0xC2;
+
 /*  BIT Registers  */
 /*  PSW  */
 sbit CY    = PSW^7;
@@ -101,6 +103,7 @@ sbit RS1   = PSW^4;
 sbit RS0   = PSW^3;
 sbit OV    = PSW^2;
 sbit P     = PSW^0;
+
 /*  TCON  */
 sbit TF1   = TCON^7;
 sbit TR1   = TCON^6;
@@ -110,6 +113,7 @@ sbit IE1   = TCON^3;
 sbit IT1   = TCON^2;
 sbit IE0   = TCON^1;
 sbit IT0   = TCON^0;
+
 /*  IE  */
 sbit EA    = IE^7;
 sbit EADC  = IE^6;
@@ -119,6 +123,7 @@ sbit ET1   = IE^3;
 sbit EX1   = IE^2;
 sbit ET0   = IE^1;
 sbit EX0   = IE^0;
+
 /*  IP  */
 sbit PS1   = IP^7;
 sbit PADC  = IP^6;
@@ -128,6 +133,7 @@ sbit PT1   = IP^3;
 sbit PX1   = IP^2;
 sbit PT0   = IP^1;
 sbit PX0   = IP^0;
+
 /*  P3  */
 sbit RD    = P3^7;
 sbit WR    = P3^6;
@@ -137,6 +143,7 @@ sbit INT1  = P3^3;
 sbit INT0  = P3^2;
 sbit TXD   = P3^1;
 sbit RXD   = P3^0;
+
 /*  SCON  */
 sbit SM0   = SCON^7;
 sbit SM1   = SCON^6;
@@ -146,9 +153,11 @@ sbit TB8   = SCON^3;
 sbit RB8   = SCON^2;
 sbit TI    = SCON^1;
 sbit RI    = SCON^0;
+
 /*  P1  */
 sbit T2EX  = P1^1;
 sbit T2    = P1^0;
+             
 /*  T2CON  */
 sbit TF2    = T2CON^7;
 sbit EXF2   = T2CON^6;
@@ -159,6 +168,7 @@ sbit XEN    = T2CON^3;
 sbit TR2    = T2CON^2;
 sbit CNT2   = T2CON^1;
 sbit CAP2   = T2CON^0;
+
 /*  WDCON  */
 sbit PRE3  = WDCON^7;
 sbit PRE2  = WDCON^6;
@@ -168,6 +178,7 @@ sbit WDIR  = WDCON^3;
 sbit WDS   = WDCON^2;
 sbit WDE   = WDCON^1;
 sbit WDWR  = WDCON^0;
+
 /*  ADCCON2  */
 sbit RDY0  = ADSTAT^7;
 sbit RDY1  = ADSTAT^6;
@@ -175,6 +186,7 @@ sbit CAL   = ADSTAT^5;
 sbit NOXREF= ADSTAT^4;
 sbit ERR0  = ADSTAT^3;
 sbit ERR1  = ADSTAT^2;
+
 /*  I2CCON  */
 sbit MDO   = I2CCON^7;
 sbit MDE   = I2CCON^6;
@@ -184,11 +196,7 @@ sbit I2CM  = I2CCON^3;
 sbit I2CRS = I2CCON^2;
 sbit I2CTX = I2CCON^1;
 sbit I2CI  = I2CCON^0;
-/*  DCON  */
-sbit D1    = DCON^7;
-sbit D1EN  = DCON^6;
-sbit D0    = DCON^5;
-sbit D0EN  = DCON^3;
+
 /*  SPICON  */
 sbit ISPI  = SPICON^7;
 sbit WCOL  = SPICON^6;

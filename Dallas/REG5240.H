@@ -2,12 +2,9 @@
 REG5240.H
 
 Header file for Dallas DS5240.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG5240_H__
-#define __REG5240_H__
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -124,6 +121,15 @@ sfr RTCD0  = 0xFE;
 sfr RTCD1  = 0xFF;
 
 /*  BIT Registers  */
+/*  P4  */
+sbit P4_7  = P4^7;
+sbit P4_6  = P4^6;
+sbit P4_5  = P4^5;
+sbit P4_4  = P4^4;
+sbit P4_3  = P4^3;
+sbit P4_2  = P4^2;
+sbit P4_1  = P4^1;
+sbit P4_0  = P4^0;
 /*  P1  */
 sbit P1_7  = P1^7;
 sbit P1_6  = P1^6;
@@ -235,10 +241,9 @@ sbit EX2   = EIE^0; /* Alternate EC0 */
 sbit CANBIP= EIP^7;
 sbit C0IP  = EIP^6;
 sbit C1IP  = EIP^5;
-sbit PWDI  = EIP^4;
+sbit PWD1  = EIP^4;
 sbit PX5   = EIP^3; /* Alternate PC3 */
 sbit PX4   = EIP^2; /* Alternate PC2 */
 sbit PX3   = EIP^1; /* Alternate PC1 */
 sbit PX2   = EIP^0; /* Alternate PC0 */
-
-#endif
+

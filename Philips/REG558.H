@@ -1,13 +1,5 @@
-/*--------------------------------------------------------------------------
-REG558.H
-
-Header file for the 80558 Processor.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG558_H__
-#define __REG558_H__
+/* (c) Copyright KEIL ELEKTRONIK GmbH.  1997, All rights reserved. */
+/*  Register Declarations for the 80558 Processor  */
 
 /*  BYTE Register  */
 sfr P0    = 0x80;
@@ -177,5 +169,5 @@ sbit AA    = 0xDA;
 sbit CR1   = 0xD9;
 sbit CR0   = 0xD8;
 
-#endif
 
+

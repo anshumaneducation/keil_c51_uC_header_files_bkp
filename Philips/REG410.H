@@ -2,12 +2,9 @@
 REG410.H
 
 Header file for 8XCL410.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG410_H__
-#define __REG410_H__
 
 /*  BYTE Register  */
 sfr P0   = 0x80;
@@ -132,5 +129,3 @@ sbit SI   = 0xDB;
 sbit AA   = 0xDA;
 sbit CR1  = 0xD9;
 sbit CR0  = 0xD8;
-
-#endif

@@ -1,13 +1,12 @@
 /*--------------------------------------------------------------------------
 AM80C324.H
 
-Header file for AMD 80C324
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
+Header file for AMD 80C324.
+Copyright (c) 1995-1996 Keil Software, Inc.  All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __AM80C324_H__
-#define __AM80C324_H__
+#ifndef AM80C324_HEADER_FILE
+#define AM80C324_HEADER_FILE 1
 
 /*------------------------------------------------
 Byte Registers
@@ -296,6 +295,8 @@ Interrupt Address = (Number * 8) + 3
 
 #define TF2_VECTOR	5  /* 0x2B Timer 2 */
 
+/*------------------------------------------------
+------------------------------------------------*/
 #endif
 
 

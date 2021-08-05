@@ -2,12 +2,12 @@
 FLOAT.H
 
 Limits for floating point types.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __FLOAT_H__
-#define __FLOAT_H__
+#ifndef _floath
+#define _floath
 
 #define FLT_RADIX        2
 #define FLT_ROUNDS       0

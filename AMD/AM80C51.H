@@ -2,12 +2,11 @@
 AM80C51.H
 
 Header file for AMD 80C51.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
+Copyright (c) 1995-1996 Keil Software, Inc.  All rights reserved.
 --------------------------------------------------------------------------*/
 
-#ifndef __AM80C51_H__
-#define __AM80C51_H__
+#ifndef AM80C51_HEADER_FILE
+#define AM80C51_HEADER_FILE 1
 
 /*------------------------------------------------
 Byte Registers
@@ -187,6 +186,8 @@ Interrupt Address = (Number * 8) + 3
 #define TF1_VECTOR	3  /* 0x1B Timer 1 */
 #define SIO_VECTOR	4  /* 0x23 Serial port */
 
+/*------------------------------------------------
+------------------------------------------------*/
 #endif
 
 

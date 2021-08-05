@@ -2,12 +2,9 @@
 REG591.H
 
 Header file for Philips 8xC591.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG591_H__
-#define __REG591_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -218,5 +215,3 @@ sbit DOIE  = 0xC3;
 sbit EIE   = 0xC2;
 sbit TIE   = 0xC1;
 sbit RIE   = 0xC0;
-
-#endif

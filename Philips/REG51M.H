@@ -1,14 +1,12 @@
 /*--------------------------------------------------------------------------
 REG51M.H
 
-Header file for Philips 8xC51MB2 & 8xC51MC2 devices
-Copyright (c) 1988-2003 Keil Elektronik GmbH and Keil Software, Inc.
+Header file for Philips 8xC51MA2 & 8xC51MB2 devices
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
+
+Based on Objective Specification Sept 2, 2000.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG51M_H__
-#define __REG51M_H__
-
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -29,8 +27,6 @@ sfr TL1    = 0x8B;
 sfr TH0    = 0x8C;
 sfr TH1    = 0x8D;
 sfr IE     = 0xA8;
-sfr IEN0   = 0xA8;
-sfr IEN1   = 0xE8;
 sfr IP     = 0xB8;
 sfr SCON   = 0x98;
 sfr S0CON  = 0x98;
@@ -40,9 +36,9 @@ sfr S0BUF  = 0x99;
 /*  80C51Fx/Rx Extensions  */
 sfr AUXR   = 0x8E;
 sfr AUXR1  = 0xA2;
-sfr S0ADDR = 0xA9;
+sfr SADDR  = 0xA9;
 sfr IPH    = 0xB7;
-sfr S0ADEN = 0xB9;
+sfr SADEN  = 0xB9;
 sfr T2CON  = 0xC8;
 sfr T2MOD  = 0xC9;
 sfr RCAP2L = 0xCA;
@@ -83,20 +79,10 @@ sfr S1BUF  = 0x181;
 sfr S1ADDR = 0x182;
 sfr S1STAT = 0x184;
 sfr SPE    = 0x1FB;
-sfr WDCON  = 0x18F;
 sfr WDTRST = 0xA6;
-sfr IP0    = 0xB8;
-sfr IP1	   = 0xF8;
-sfr IP0H   = 0xB7;
-sfr IP1H   = 0xF7;
-sfr P4     = 0x1C0;
-
-sfr SPCTL  = 0xE2;
-sfr SPCFG  = 0xE1;
-sfr SPDAT  = 0xE3;
+sfr WDCON  = 0x18F;
 
 /*  BIT Registers  */
-
 /*  PSW   */
 sbit CY   = PSW^7;
 sbit AC   = PSW^6;
@@ -116,22 +102,15 @@ sbit IT1  = TCON^2;
 sbit IE0  = TCON^1;
 sbit IT0  = TCON^0;
 
-/*  IEN0   */
-sbit EA   = IEN0^7;
-sbit EC   = IEN0^6;
-sbit ET2  = IEN0^5;
-sbit ES   = IEN0^4;
-sbit ET1  = IEN0^3;
-sbit EX1  = IEN0^2;
-sbit ET0  = IEN0^1;
-sbit EX0  = IEN0^0;
-
-/*  IEN1   */
-sbit ESPI = IEN1^3;
-sbit ES1T = IEN1^2;
-sbit ES0T = IEN1^1;
-sbit ES1  = IEN1^0;
-sbit ES1R = IEN1^0;
+/*  IE   */
+sbit EA   = IE^7;
+sbit EC   = IE^6;
+sbit ET2  = IE^5;
+sbit ES   = IE^4;
+sbit ET1  = IE^3;
+sbit EX1  = IE^2;
+sbit ET0  = IE^1;
+sbit EX0  = IE^0;
 
 /*  IP   */ 
 sbit PPC  = IP^6;
@@ -142,12 +121,6 @@ sbit PX1  = IP^2;
 sbit PT0  = IP^1;
 sbit PX0  = IP^0;
 
-/*  IP1   */ 
-sbit PSPI  = IP1^3;
-sbit PS1T  = IP1^2;
-sbit PS0T  = IP1^1;
-sbit PS1   = IP1^0;
-
 /*  P3  */
 sbit RD   = P3^7;
 sbit WR   = P3^6;
@@ -157,10 +130,6 @@ sbit INT1 = P3^3;
 sbit INT0 = P3^2;
 sbit TXD  = P3^1;
 sbit RXD  = P3^0;
-
-/*  P4  */
-sbit TXD1 = P4^1;
-sbit RXD1 = P4^0;
 
 /*  SCON  */
 sbit SM0  = SCON^7; // alternatively "FE"
@@ -196,10 +165,9 @@ sbit CP_RL2= T2CON^0;
 /*  CCON  */
 sbit CF    = CCON^7;
 sbit CR    = CCON^6;
+
 sbit CCF4  = CCON^4;
 sbit CCF3  = CCON^3;
 sbit CCF2  = CCON^2;
 sbit CCF1  = CCON^1;
 sbit CCF0  = CCON^0;
-
-#endif

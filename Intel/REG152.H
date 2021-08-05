@@ -2,12 +2,9 @@
 REG152.H
 
 Header file for 80C152.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG152_H__
-#define __REG152_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -172,5 +169,3 @@ sbit PGSTV = 0xFB;
 sbit PDMA0 = 0xFA;
 sbit PGSRE = 0xF9;
 sbit PGSRV = 0xF8;
-
-#endif

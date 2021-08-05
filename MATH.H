@@ -2,12 +2,9 @@
 MATH.H
 
 Prototypes for mathematic functions.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __MATH_H__
-#define __MATH_H__
 
 #pragma SAVE
 #pragma REGPARMS
@@ -37,5 +34,3 @@ extern float fmod  (float x, float y);
 extern float pow   (float x, float y);
 
 #pragma RESTORE
-
-#endif

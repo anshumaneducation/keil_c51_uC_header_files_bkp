@@ -3,12 +3,10 @@ REG54.H
 
 Header file for Winbond microcontrollers with P4 extension
 Based on the Preliminary Release form June 1998 
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+
+Copyright (c) 1988-2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG54_H__
-#define __REG54_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -130,5 +128,3 @@ sbit IT2    = XICON^0;
 /* P4 */
 sbit INT2   = P4^3;
 sbit INT3   = P4^2;
-
-#endif

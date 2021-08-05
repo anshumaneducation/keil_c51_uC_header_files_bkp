@@ -2,12 +2,9 @@
 REG451.H
 
 Header file for 80C451.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG451_H__
-#define __REG451_H__
 
 /*  BYTE Registers  */
 sfr P0   = 0x80;
@@ -104,5 +101,3 @@ sbit OBFC = 0xEB;
 sbit IDSM = 0xEA;
 sbit OBF  = 0xE9;
 sbit IBF  = 0xE8;
-
-#endif

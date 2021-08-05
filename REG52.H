@@ -2,12 +2,9 @@
 REG52.H
 
 Header file for generic 80C52 and 80C32 microcontroller.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG52_H__
-#define __REG52_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -110,5 +107,3 @@ sbit EXEN2  = T2CON^3;
 sbit TR2    = T2CON^2;
 sbit C_T2   = T2CON^1;
 sbit CP_RL2 = T2CON^0;
-
-#endif

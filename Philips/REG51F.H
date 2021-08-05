@@ -2,12 +2,12 @@
 REG51F.H
 
 Header file for Philips 8xC31/51, 80C51Fx, 80C51Rx+
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
 
-#ifndef __REG51F_H__
-#define __REG51F_H__
+Modification according to DataSheet from April 1999
+ - SFR's AUXR and AUXR1 added for 80C51Rx+ derivatives
+--------------------------------------------------------------------------*/
 
 /*  BYTE Registers  */
 sfr P0   = 0x80;
@@ -154,5 +154,3 @@ sbit CCF3  = CCON^3;
 sbit CCF2  = CCON^2;
 sbit CCF1  = CCON^1;
 sbit CCF0  = CCON^0;
-
-#endif

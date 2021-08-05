@@ -2,12 +2,9 @@
 REG51GB.H
 
 Header file for 80C51GB.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG51GB_H__
-#define __REG51GB_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -221,5 +218,3 @@ sbit C1CF3  = 0xEB;
 sbit C1CF2  = 0xEA;
 sbit C1CF1  = 0xE9;
 sbit C1CF0  = 0xE8;
-
-#endif

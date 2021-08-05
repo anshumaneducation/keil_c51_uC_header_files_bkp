@@ -1,12 +1,8 @@
 /*------------------------------------------------------------------
 REG652.H
 Header file for the Philips 80/83/87C652 & 80/83/87C654 
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
-All rights reserved.
---------------------------------------------------------------------------*/
-
-#ifndef __REG652_H__
-#define __REG652_H__
+Copyright (c) 1995-1997 Keil Elektronik GmbH  All rights reserved.
+------------------------------------------------------------------*/
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -116,5 +112,3 @@ sbit SI    = 0xDB;
 sbit AA    = 0xDA;
 sbit CR1   = 0xD9;
 sbit CR0   = 0xD8;
-
-#endif

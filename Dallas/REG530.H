@@ -2,12 +2,10 @@
 REG530.H
 
 Header file for DS87C520/DS83C520 and DS87C530/DS83C530.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988 - 2000 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
 
-#ifndef __REG530_H__
-#define __REG530_H__
+--------------------------------------------------------------------------*/
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -186,5 +184,4 @@ sbit PX5   = EIP^3;
 sbit PX4   = EIP^2;
 sbit PX3   = EIP^1;
 sbit PX2   = EIP^0;
-
-#endif
+

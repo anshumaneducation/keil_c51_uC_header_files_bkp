@@ -2,12 +2,9 @@
 REG781.H
 
 Header file for 8XCL781.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG781_H__
-#define __REG781_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -170,5 +167,3 @@ sbit EXEN2= 0xCB;
 sbit TR2  = 0xCA;
 sbit C_T2 = 0xC9;
 sbit CP_RL2= 0xC8;
-
-#endif

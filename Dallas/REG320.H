@@ -2,12 +2,14 @@
 REG320.H
 
 Header file for DS80C320/DS80C323.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1999 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
---------------------------------------------------------------------------*/
 
-#ifndef __REG320_H__
-#define __REG320_H__
+Modification:
+ - 30.04.99/RB: SBit changed form "SMOD" to "SMOD_1" in WDCON at pos. 7
+ - 30.04.99/RB: SBit changed form "WDRF" to "WTRF" in WDCON at pos. 2
+ - 30.04.99/RB: SBit declaration form: <SFR>^X character for bit position (X = 0..7)
+--------------------------------------------------------------------------*/
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -169,5 +171,3 @@ sbit PX5   = EIP^3;
 sbit PX4   = EIP^2;
 sbit PX3   = EIP^1;
 sbit PX2   = EIP^0;
-
-#endif

@@ -2,12 +2,9 @@
 STDIO.H
 
 Prototypes for standard I/O functions.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-2001 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __STDIO_H__
-#define __STDIO_H__
 
 #ifndef EOF
  #define EOF -1
@@ -38,6 +35,3 @@ extern int sscanf (char *, const char *, ...);
 extern int puts (const char *);
 
 #pragma RESTORE
-
-#endif
-

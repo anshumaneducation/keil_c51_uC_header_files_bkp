@@ -2,12 +2,9 @@
 REG51G.H
 
 Header file for 80C51GA.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG51G_H__
-#define __REG51G_H__
 
 /*  BYTE Registers  */
 sfr P0    = 0x80;
@@ -112,5 +109,3 @@ sbit ACH3  = 0x93;
 sbit ACH2  = 0x92;
 sbit ACH1  = 0x91;
 sbit ACH0  = 0x90;
-
-#endif

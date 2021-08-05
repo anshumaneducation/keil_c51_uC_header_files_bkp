@@ -2,12 +2,9 @@
 REG528.H
 
 Header file for 8xC524 & 8xC528.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG528_H__
-#define __REG528_H__
 
 /*  BYTE Registers  */
 sfr P0     = 0x80;
@@ -130,5 +127,3 @@ sbit RBF   = 0xDB; /* read only  */
 sbit WBF   = 0xDA; /* read only  */
 sbit STR   = 0xD9; /* read/write */
 sbit ENS   = 0xD8; /* read/write */
-
-#endif

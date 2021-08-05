@@ -2,12 +2,9 @@
 REG51F.H
 
 Header file for 80C51FA, 80C51FB, 80C51FC.
-Copyright (c) 1988-2002 Keil Elektronik GmbH and Keil Software, Inc.
+Copyright (c) 1988-1997 Keil Elektronik GmbH and Keil Software, Inc.
 All rights reserved.
 --------------------------------------------------------------------------*/
-
-#ifndef __REG51F_H__
-#define __REG51F_H__
 
 /*  BYTE Registers  */
 sfr P0   = 0x80;
@@ -158,5 +155,3 @@ sbit CCF3  = 0xDB;
 sbit CCF2  = 0xDA;
 sbit CCF1  = 0xD9;
 sbit CCF0  = 0xD8;
-
-#endif
